@@ -1,0 +1,12 @@
+# Suppress file by name
+portal_data_joined.csv
+
+#Suppress file by type (the asterisk * means any of the files that are .csv or *.RData; may not want to use this if you have some files you do not want to suppress or you can use the suppress but bang/! option)
+*.csv
+*.RData #useful if you save things out as RData files b/c you work in R a lot
+
+#Suppress files by type by folder (this would tell it to suppress all the .csv files only in the data-cleaned folder)
+data-cleaned/*.csv
+
+# Suppress all but (put an exclamation point in front, a bang, which means not)
+!data-cleaned/portal_data_joined_final.csv
